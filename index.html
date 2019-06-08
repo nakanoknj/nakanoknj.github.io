@@ -15,9 +15,11 @@
 <link rel="shortcut icon" href="">
 </head>
 <body>
-  <p>ほげほげ</p>
+  <div id="text-button"><p id="text">クリック</p></div>
   <script>
-    alert('JavaScriptのアラート');
+    document.getElementById("text-button").onclick = function() {
+      alert("クリックされた！");
+    };
   </script>
 </body>
 </html>
