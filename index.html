@@ -22,7 +22,8 @@
       window.ReactNativeWebView.postMessage('{"message": "device", "key": "keykeykey"}');
     };
   </script>
-  <p><a href="javascript:;" onclick="window.ReactNativeWebView.postMessage('{\x22message\x22: \x22goHome\x22}');">hoge link0</a></p>
+  <p><a href="javascript:;" onclick="window.ReactNativeWebView.postMessage('{&quot;message&quot;: &quot;goHome&quot;}');">hoge link quot;</a></p>
+  <p><a href="javascript:;" onclick="window.ReactNativeWebView.postMessage('{\x22message\x22: \x22goHome\x22}');">hoge link x22</a></p>
   <p><a href="javascript:;" onclick="window.ReactNativeWebView.postMessage('mojiretu');">send string</a></p>
   <p><a href="javascript:;" onclick="window.alert('アラートの表示');">alert</a></p>
   <p><a href="javascript:;" onclick="window.ReactNativeWebView.postMessage('{\u022message\u022: \u022goHome\u022}');">hoge link3</a></p>
